@@ -44,3 +44,9 @@ export function handleAddGoal(item_name, resetField) {
         }).catch(() => alert('could not add item, please retry'))
     }
 }
+// there's no API call for toggle goal
+export function handleToggleGoal(goalId) {
+    return (dispatch) => {
+        dispatch(toggleGoal(goalId))
+    }
+}
